@@ -6,18 +6,24 @@
 
 /* Basic styles */
 body {
-    background: url(/images/1029099-cape-town.jpg);
-    font-family: Arial, sans-serif;
+    background: url('images/1029099-cape-town.jpg');
     background-size: cover;
+    font-family: Arial, sans-serif;
 }
 
 header {
     background: transparent;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(2px);
+    transition: background-color 0.5s ease;
     color: #fff;
     padding: 20px;
+
 }
-header 
+.logo img{
+    border-radius: 50px;
+    height: 50px;
+    width: fit-content;
+}
 
 nav {
     display: flex;
@@ -33,7 +39,7 @@ nav {
 .nav-links {
     list-style: none;
     display: flex;
-}
+} 
 
 .nav-links li {
     margin-right: 20px;
@@ -44,8 +50,9 @@ nav {
     text-decoration: none;
 }
 
+
 .hero {
-    height: 80vh;
+    height: 42vh;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -68,4 +75,33 @@ nav {
     display: inline-block;
     background-color: #ff6600;
     color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    justify-items: space-between;
+    text-decoration: none;
+}
+footer {
+    color: #fff;
+    margin-bottom: -10px;
+    margin-left: 29px;
+}
+/* CSS */
+footer.copyright {
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    background-color: transparent; /* Optional: Background color for better visibility */
+    backdrop-filter: 10px;
+    padding: 10px 20px; /* Optional: Padding for better appearance */
+    box-sizing: border-box; /* Optional: Ensure padding is included in the width */
+    backdrop-filter: blur(2px);
+    margin-left: 0;
+}
+@media screen and (width < 1200px){
+    body {
+        background: url(/images/1029099-cape-town.jpg);
+        font-family: Arial, sans-serif;
+        background-size: cover;
+    }
 }

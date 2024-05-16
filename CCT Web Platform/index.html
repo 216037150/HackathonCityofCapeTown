@@ -1,34 +1,41 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>City of Cape Town | Community Engagement Forum</title>
+    <title>Community Engagement Forum</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">Cape Town City</div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <nav>
+        <div class="logo"><img src="images/City of Cape Town Logo.png" alt="City of Cape Town Logo"></div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
+<body>
     <section class="hero">
         <div class="hero-content">
-            <h1>Welcome to Cape Town City</h1>
-            <p>Discover the beauty and charm of our city.</p>
-            <a href="#" class="btn">Explore Now</a>
+            <h1>Community Engagement Forum</h1>
+            <p>The City of Cape Town aspires to be a very innovative, inclusive partner of the people that promotes social justice, sustainability, economic development and wnvironmental stewardship, amongst other things.</p>
+            <br>
+            <a href="#" class="btn">Unemployed?</a> &nbsp;&nbsp;&nbsp;
+            <a href="#" class="btn">Join the chat</a>
         </div>
     </section>
     
-
-    <footer>
-        <p>&copy; 2024 Cape Town City. All rights reserved.</p>
+    <footer class="copyright">
+        <p>&copy; <span id="currentYear"></span> Cape Town City. All rights reserved.</p>
     </footer>
+
+    <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById("currentYear").textContent = currentYear;
+    </script>
 </body>
 </html>
