@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+    background: url(/images/1029099-cape-town.jpg);
+    font-family: Arial, sans-serif;
+    background-size: cover;
+}
+
+header {
+    background: transparent;
+    backdrop-filter: blur(15px);
+    color: #fff;
+    padding: 20px;
+}
+header 
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff6600;
+    color: #fff;
+}
